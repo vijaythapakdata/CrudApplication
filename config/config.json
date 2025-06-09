@@ -9,10 +9,28 @@
           "manifest": "./src/webparts/crudOperation/CrudOperationWebPart.manifest.json"
         }
       ]
+    },
+    "fetch-large-data-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/fetchLargeData/FetchLargeDataWebPart.js",
+          "manifest": "./src/webparts/fetchLargeData/FetchLargeDataWebPart.manifest.json"
+        }
+      ]
+    },
+    "paginated-table-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/paginatedTable/PaginatedTableWebPart.js",
+          "manifest": "./src/webparts/paginatedTable/PaginatedTableWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "CrudOperationWebPartStrings": "lib/webparts/crudOperation/loc/{locale}.js"
+    "CrudOperationWebPartStrings": "lib/webparts/crudOperation/loc/{locale}.js",
+    "FetchLargeDataWebPartStrings": "lib/webparts/fetchLargeData/loc/{locale}.js",
+    "PaginatedTableWebPartStrings": "lib/webparts/paginatedTable/loc/{locale}.js"
   }
 }
